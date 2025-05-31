@@ -1,183 +1,185 @@
-
 const products = [
     {
         id: 1,
-        name: 'F8 Vape',
-        price: 1800,
-        category: 'Electronics',
-        rating: 5.0,
-        image: 'https://images.app.goo.gl/kYHso5R1caEzMNsY8',
+        name: 'Classic White T-Shirt',
+        price: 25,
+        category: 'Fashion',
+        rating: 4.8,
+        image: 'https://example.com/white-tshirt.jpg',
         available: true,
-        description:
-            'Experience immersive sound with active noise cancellation and transparency mode. Features include adaptive EQ, spatial audio, and sweat resistance.',
+        description: '100% cotton classic white t-shirt with a comfortable fit. Perfect for everyday wear.',
         specs: [
-            'Active Noise Cancellation',
-            'Transparency Mode',
-            'Spatial Audio',
-            '24H Battery Life'
+            '100% Cotton',
+            'Regular Fit',
+            'Machine Washable',
+            'Breathable Fabric'
         ],
         reviews: [
             {
                 user: 'John D.',
                 rating: 5,
-                comment: "Best earbuds I've ever owned!"
+                comment: "Perfect fit and great quality!"
             },
             {
                 user: 'Sarah M.',
-                rating: 5,
-                comment: 'Great sound quality and battery life'
+                rating: 4.5,
+                comment: 'Very comfortable fabric'
             }
         ],
         colors: ['White'],
-        stock: 1
+        sizes: ['S', 'M', 'L', 'XL'],
+        stock: 50
     },
     {
         id: 2,
-        name: 'MacBook Air',
-        price: 435,
-        category: 'Electronics',
-        rating: 5.0,
-        image: 'https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/macbook-air-space-gray-select-201810?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1633027804000',
+        name: 'Black Graphic Tee',
+        price: 35,
+        category: 'Fashion',
+        rating: 4.9,
+        image: 'https://example.com/black-graphic-tee.jpg',
         available: true,
-        description:
-            "Supercharged by M2 chip. The world's thinnest laptop delivers powerful performance with up to 18 hours of battery life.",
+        description: 'Premium black t-shirt with a cool graphic print. Soft fabric with a modern fit.',
         specs: [
-            'M2 Chip',
-            '13.6-inch Liquid Retina display',
-            '8GB RAM',
-            '256GB SSD'
+            '100% Organic Cotton',
+            'Screen Printed Design',
+            'Slim Fit',
+            'Pre-shrunk Fabric'
         ],
         reviews: [
             {
                 user: 'Mike R.',
                 rating: 5,
-                comment: 'Perfect for work and entertainment'
+                comment: 'Love the design and fit'
             },
-            { user: 'Lisa K.', rating: 5, comment: 'Amazing battery life!' }
+            { user: 'Lisa K.', rating: 4.8, comment: 'Great quality print' }
         ],
-        colors: ['Space Gray', 'Silver', 'Gold'],
-        stock: 25
+        colors: ['Black'],
+        sizes: ['S', 'M', 'L', 'XL'],
+        stock: 35
     },
     {
         id: 3,
-        name: 'Google Pixel',
-        price: 699,
-        category: 'Electronics',
-        rating: 4.8,
-        image: 'https://store.google.com/product/images/pixel_7a_sage.png',
+        name: 'Vintage Band T-Shirt',
+        price: 45,
+        category: 'Fashion',
+        rating: 4.7,
+        image: 'https://example.com/vintage-band-tee.jpg',
         available: true,
-        description:
-            'The smartest and most powerful Pixel yet. Features an advanced camera system and the latest Android experience.',
+        description: 'Authentic vintage band t-shirt with distressed print for a retro look.',
         specs: [
-            '6.4-inch OLED display',
-            '128GB Storage',
-            '12GB RAM',
-            '50MP Camera'
+            'Soft Washed Cotton',
+            'Vintage Wash',
+            'Oversized Fit',
+            'Distressed Graphic'
         ],
         reviews: [
             {
                 user: 'David W.',
-                rating: 4.8,
-                comment: 'Best Android experience'
+                rating: 4.7,
+                comment: 'Awesome vintage look'
             },
-            { user: 'Emma S.', rating: 4.7, comment: 'Amazing camera quality' }
+            { user: 'Emma S.', rating: 4.6, comment: 'Very comfortable' }
         ],
-        colors: ['Sage', 'Black', 'White'],
-        stock: 30
+        colors: ['Gray', 'Black'],
+        sizes: ['S', 'M', 'L', 'XL'],
+        stock: 20
     },
     {
         id: 4,
-        name: 'PlayStation 5',
-        price: 499,
-        category: 'Electronics',
-        rating: 4.9,
-        image: 'https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21',
+        name: 'Pocket Polo T-Shirt',
+        price: 39,
+        category: 'Fashion',
+        rating: 4.6,
+        image: 'https://example.com/pocket-polo-tee.jpg',
         available: true,
-        description:
-            'Next-gen gaming console with lightning-fast loading, haptic feedback, and stunning 4K graphics.',
-        specs: ['4K Resolution', 'Ray Tracing', '825GB SSD', '120Hz Output'],
+        description: 'Classic polo t-shirt with a chest pocket. Perfect for casual and smart-casual occasions.',
+        specs: [
+            'Pima Cotton',
+            'Chest Pocket',
+            'Ribbed Collar',
+            'Tailored Fit'
+        ],
         reviews: [
             {
                 user: 'Tom H.',
-                rating: 5,
-                comment: 'Gaming has never been better!'
+                rating: 4.8,
+                comment: 'Great for office casual'
             },
             {
                 user: 'Alice B.',
-                rating: 4.8,
-                comment: 'Amazing graphics and speed'
+                rating: 4.5,
+                comment: 'Love the pocket detail'
             }
         ],
-        colors: ['White'],
-        stock: 15
+        colors: ['Navy', 'White', 'Gray'],
+        sizes: ['S', 'M', 'L', 'XL'],
+        stock: 30
     },
     {
         id: 5,
-        name: 'Nike Air Max',
-        price: 129,
+        name: 'Oversized Tie-Dye Tee',
+        price: 32,
         category: 'Fashion',
-        rating: 4.7,
-        image: 'https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/1a4e9b53-0181-441d-9c43-4a10d38dd93c/air-max-270-shoes-P0j2DN.png',
+        rating: 4.5,
+        image: 'https://example.com/tie-dye-tee.jpg',
         available: true,
-        description:
-            "Featuring Nike's biggest heel Air unit yet, the Air Max 270 delivers visible cushioning under every step.",
+        description: 'Trendy oversized t-shirt with vibrant tie-dye pattern. Soft and comfortable fabric.',
         specs: [
-            'Air Max cushioning',
-            'Mesh upper',
-            'Rubber outsole',
-            'Foam midsole'
+            '100% Cotton',
+            'Oversized Fit',
+            'Hand-dyed Pattern',
+            'Relaxed Silhouette'
         ],
         reviews: [
             {
                 user: 'Chris P.',
-                rating: 4.7,
-                comment: 'Super comfortable for daily wear'
+                rating: 4.6,
+                comment: 'Love the colors!'
             },
             {
                 user: 'Maria L.',
-                rating: 4.8,
-                comment: 'Stylish and great quality'
+                rating: 4.4,
+                comment: 'Very comfortable fit'
             }
         ],
-        colors: ['Black', 'White', 'Red'],
-        sizes: ['US 7', 'US 8', 'US 9', 'US 10', 'US 11'],
-        stock: 40
+        colors: ['Multicolor'],
+        sizes: ['S', 'M', 'L', 'XL'],
+        stock: 25
     },
     {
         id: 6,
-        name: "Levi's 501 Jeans",
-        price: 89,
+        name: 'Long Sleeve Basic Tee',
+        price: 29,
         category: 'Fashion',
-        rating: 4.6,
-        image: 'https://lsco.scene7.com/is/image/lsco/005010114-front-pdp?fmt=jpeg&qlt=70&resMode=bisharp&fit=crop,0&op_usm=1.25,0.6,8&wid=2000&hei=2000',
+        rating: 4.7,
+        image: 'https://example.com/long-sleeve-tee.jpg',
         available: true,
-        description:
-            'The original straight fit jean that started it all. A cultural icon, worn by generations.',
+        description: 'Essential long sleeve t-shirt made from premium cotton. Perfect for layering or wearing alone.',
         specs: [
-            '100% Cotton',
-            'Button fly',
-            'Straight fit',
-            'Five-pocket styling'
+            'Premium Cotton',
+            'Ribbed Cuffs',
+            'Regular Fit',
+            'Reinforced Neckline'
         ],
         reviews: [
             {
                 user: 'Robert K.',
-                rating: 4.6,
-                comment: 'Classic fit, never goes out of style'
+                rating: 4.8,
+                comment: 'Great basic for my wardrobe'
             },
             {
                 user: 'Jennifer H.',
-                rating: 4.5,
-                comment: 'Perfect fit and great quality'
+                rating: 4.6,
+                comment: 'Perfect weight for all seasons'
             }
         ],
-        colors: ['Blue', 'Black', 'Light Blue'],
-        sizes: ['28x30', '30x30', '32x30', '34x30', '36x30'],
-        stock: 60
+        colors: ['Black', 'White', 'Gray'],
+        sizes: ['S', 'M', 'L', 'XL'],
+        stock: 40
     }
 ];
 
-const categories = ['All', 'Electronics', 'Fashion', 'Beauty', 'Toys'];
+const categories = ['All', 'Fashion', 'Men', 'Women', 'Unisex'];
 
 const promotions = [
     {
@@ -196,9 +198,9 @@ const promotions = [
     },
     {
         id: 3,
-        title: 'Fashion Week',
-        discount: '30% OFF',
-        code: 'FASHION30',
+        title: 'T-Shirt Special',
+        discount: 'Buy 2 Get 1 Free',
+        code: 'TEEBOGO',
         validUntil: '2025-01-31'
     }
 ];
@@ -219,7 +221,7 @@ const notifications = [
         id: 2,
         type: 'promo',
         title: 'Special Offer',
-        message: 'Get 50% off on all winter collection items!',
+        message: 'Get 50% off on all t-shirts this week!',
         timestamp: new Date(2025, 0, 14, 7, 15).getTime(),
         isRead: false,
         icon: 'fa-tag',
@@ -229,7 +231,7 @@ const notifications = [
         id: 3,
         type: 'news',
         title: 'New Collection Arrived',
-        message: 'Check out our latest spring collection',
+        message: 'Check out our latest summer t-shirt collection',
         timestamp: new Date(2025, 0, 13, 18, 45).getTime(),
         isRead: true,
         icon: 'fa-tshirt',
@@ -249,21 +251,21 @@ const notifications = [
 
 // Trending tags data
 const trendingTags = [
-    { id: 1, name: 'Summer Collection', searches: 15420 },
-    { id: 2, name: 'Casual Wear', searches: 12350 },
-    { id: 3, name: 'Sport Shoes', searches: 11200 },
-    { id: 4, name: 'Designer Bags', searches: 9870 },
-    { id: 5, name: 'Smart Watches', searches: 8940 },
-    { id: 6, name: 'Formal Wear', searches: 7650 },
-    { id: 7, name: 'Accessories', searches: 6780 },
-    { id: 8, name: 'Winter Wear', searches: 5430 },
-    { id: 9, name: 'Ethnic Wear', searches: 4980 },
-    { id: 10, name: 'Sunglasses', searches: 4320 },
-    { id: 11, name: 'Sneakers', searches: 3890 },
-    { id: 12, name: 'Denim', searches: 3450 },
-    { id: 13, name: 'Party Wear', searches: 3210 },
-    { id: 14, name: 'Fitness Gear', searches: 2980 },
-    { id: 15, name: 'Home Decor', searches: 2760 }
+    { id: 1, name: 'Basic Tees', searches: 15420 },
+    { id: 2, name: 'Graphic Tees', searches: 12350 },
+    { id: 3, name: 'Oversized T-Shirts', searches: 11200 },
+    { id: 4, name: 'Vintage Tees', searches: 9870 },
+    { id: 5, name: 'Pocket Tees', searches: 8940 },
+    { id: 6, name: 'Long Sleeve Tees', searches: 7650 },
+    { id: 7, name: 'Plain T-Shirts', searches: 6780 },
+    { id: 8, name: 'Band Tees', searches: 5430 },
+    { id: 9, name: 'Tie-Dye', searches: 4980 },
+    { id: 10, name: 'Athletic Tees', searches: 4320 },
+    { id: 11, name: 'Premium Cotton', searches: 3890 },
+    { id: 12, name: 'Linen Tees', searches: 3450 },
+    { id: 13, name: 'Polo Tees', searches: 3210 },
+    { id: 14, name: 'Muscle Tees', searches: 2980 },
+    { id: 15, name: 'Henley Tees', searches: 2760 }
 ];
 
 localStorage.setItem('products', JSON.stringify(products));
